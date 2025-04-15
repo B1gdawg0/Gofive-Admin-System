@@ -1,0 +1,5 @@
+<app-sidebar *ngIf="showSidebar"></app-sidebar>
+
+<div [ngClass]="{ 'main-content': true, 'full-width': !showSidebar }">
+  <router-outlet></router-outlet>
+</div>
