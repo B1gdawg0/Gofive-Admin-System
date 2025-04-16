@@ -22,6 +22,6 @@ export class DocumentComponent {
   ngOnInit(): void {
     this.documentsService.getDocuments().subscribe((data: Document[]) => {
       this.documents = data;
-    });
+    },);
   }
 }

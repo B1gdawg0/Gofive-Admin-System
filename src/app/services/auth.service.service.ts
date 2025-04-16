@@ -22,8 +22,10 @@ export class AuthServiceService {
   }
 
   login(username: string, password: string): Observable<User> {
+    console.log(username)
     return this.userService.getUsers().pipe(
       map(users => {
+        console.log(users)
         // DON'T FORGET TO ADD LOGIN LOGIC HERE NA
         const user = users.find(u => u.username === username );
         if (user) {

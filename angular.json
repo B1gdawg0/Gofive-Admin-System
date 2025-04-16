@@ -62,7 +62,8 @@
               "buildTarget": "Gofive-Admin-System:build:production"
             },
             "development": {
-              "buildTarget": "Gofive-Admin-System:build:development"
+              "buildTarget": "Gofive-Admin-System:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
